@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
+import BeeApp from './app/index';
 
-AppRegistry.registerComponent('BeeApp', () => App);
+AppRegistry.registerComponent('BeeApp', () => BeeApp);
