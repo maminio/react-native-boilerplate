@@ -5,36 +5,40 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
 import { Provider, connect } from 'react-redux';
+import Scenes from 'app/scenes';
 import configureStore from './config/store';
-// Style
+
+
+// eslint-disable-next-line no-unused-vars
 import styles from './styles';
 
 
+const Navigator = createStackNavigator(Scenes, { initialRouteName: 'Home' });
+
+
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
 
-  componentWillMount(){}
+    };
+  }
 
-  componentDidMount(){}
+  componentWillMount() {}
 
+  componentDidMount() {}
 
-  render(){
+  render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-      </View>
-    )
+      // TODO: CHANGE
+      <Navigator />
+    );
   }
 }
 
-
-
+// eslint-disable-next-line no-unused-vars
 const mapStateToProps = state => ({
 });
 
@@ -44,6 +48,7 @@ const mapDispatchToProps = {
 const AppCompose = connect(mapStateToProps, mapDispatchToProps)(App);
 
 
+// eslint-disable-next-line react/no-multi-comp
 export default class BeeApp extends Component {
   // static propTypes = {}
   constructor() {

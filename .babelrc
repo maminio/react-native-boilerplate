@@ -4,6 +4,7 @@
     ["module-resolver", {
       "root": ["./app"],
       "alias": {
+        "app": "./app",
         "actions": "./app/actions",
         "components": "./app/components",
         "config": "./app/config",
@@ -11,5 +12,4 @@
       }
     }]
   ],
-
 }
