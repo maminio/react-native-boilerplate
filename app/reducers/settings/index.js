@@ -1,5 +1,3 @@
 import sessions from './sessions';
 
-export {
-  sessions,
-}
+export { sessions };

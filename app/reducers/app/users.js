@@ -1,4 +1,4 @@
-import * as actionTypes from '../../actions/constants';
+import * as actionTypes from 'actions/constants';
 
 export const initialState = {
   userName: 'BEE_ME'

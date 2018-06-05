@@ -1,3 +1,15 @@
 {
-  "presets": ["react-native"]
+  "presets": ["react-native"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./app"],
+      "alias": {
+        "actions": "./app/actions",
+        "components": "./app/components",
+        "config": "./app/config",
+        "reducers": "./app/reducers",
+      }
+    }]
+  ],
+
 }
